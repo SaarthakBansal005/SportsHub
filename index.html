@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="C:\Users\ankit\Downloads\sportshub-high-resolution-logo-white.png" alt="SportsHub Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSport('football')">Football</a></li>
+                    <li><a href="#" onclick="showSport('basketball')">Basketball</a></li>
+                    <li><a href="#" onclick="showSport('formula1')">Formula 1</a></li>
+                    <li><a href="#" onclick="showSport('mma')">MMA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="introText" class="intro-text">Select a sport to view leagues and matches.</div>
+        <div class="dropdown-container" style="display: none;">
+            <select id="leagueDropdown" class="styled-dropdown"></select>
+        </div>
+        <div class="tabs-container">
+            <button class="tab-button" onclick="showMatches('yesterday')">Yesterday</button>
+            <button class="tab-button active" onclick="showMatches('today')">Today</button>
+            <button class="tab-button" onclick="showMatches('tomorrow')">Tomorrow</button>
+        </div>
+        <div id="matchesContainer"></div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+            <div class="footer-content">
+                <h2>About SportsHub</h2>
+                <p>SportsHub is your ultimate destination for all things sports. From live match schedules and streaming links to detailed information about leagues and teams, we bring the excitement of football, basketball, Formula 1, and MMA right to your screen.</p>
+        
+                <h3>What We Offer</h3>
+                <p>At SportsHub, we provide comprehensive coverage of major sports events with a focus on accuracy and user experience. Our platform offers up-to-date schedules, live match countdowns, and a user-friendly interface to help you stay on top of your favorite games.</p>
+        
+                <h3>How to Use SportsHub</h3>
+                <p>To find out about upcoming matches, simply select your sport and check out the schedule. We offer live updates and countdowns to keep you informed about match timings. For detailed information, click on any match to get more details and links.</p>
+        
+                <h3>Contact Us</h3>
+                <p>Have questions or feedback? Reach out to us at <a href="mailto:info@sportshub.com">info@sportshub.com</a>. We value your input and strive to improve our platform to better serve your sports needs.</p>
+        
+                <h3>Disclaimer</h3>
+                <p>SportsHub does not host any streaming content. We provide links to external sites for your convenience. Please ensure that you are compliant with local laws and regulations when accessing streaming content.</p>
+        
+                <p>&copy; 2024 SportsHub. All rights reserved.</p>
+            </div>
+        </footer>
+        
+</body>
+</html>
